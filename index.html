@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info météo</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body class="home">
+    <div class="carrousel">
+        <div class="slide apparition">
+            <img class="paris slideImg" src="img/paris.jpg" width="100%">
+            <div class="text">Paris</div>
+        </div>
+    
+        <div class="slide apparition">
+            <img class="slideImg" src="img/metz.jpg"  width="100%">
+            <div class="text">Metz</div>
+        </div>
+    
+        <div class="slide apparition">
+            <img class="slideImg" src="img/istanbul.jpg" width="100%">
+            <div class="text">Istanbul</div>
+        </div>   
+        <br>
+        <div class="puces">
+            <span class="puce"></span> 
+            <span class="puce"></span> 
+            <span class="puce"></span> 
+        </div>    
+    </div>
+
+
+    <div class="content">
+    <section class="accueil">
+        <div class="btns">
+            <button id="btn1" class="btn" onclick="infoParis()"> Paris </button>
+            <button id="btn2" class="btn" onclick="infoMetz()"> Metz </button>
+            <button id="btn3" class="btn" onclick="infoIstanbul()"> Istanbul </button>
+        </div>
+        <div class="ville" id="ville">
+            <div class="nom-temperature">
+                <div class="nom_section">
+                    <img class="lieux" src="img/lieux.svg" alt="lieux" width="50px" height="50px">
+                    <div id="nom"></div>
+                </div>
+                <div class="temp_section">
+                    <img class="temperature" src="img/temperature.svg" alt="temperature" width="50px" height="50px">
+                    <div id="temperature"></div>
+                </div>
+            </div>
+            <div class="humidite-vent">
+                <div class="humidite_section">
+                    <img class="humidite" src="img/humidite.svg" alt="humidite" width="50px" height="50px">
+                    <div id="humidite"></div>
+                </div>
+                <div class="vent_section">
+                    <img class="wind" src="img/wind.svg" alt="wind" width="50px" height="50px">
+                    <div id="vent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
